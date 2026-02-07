@@ -1,31 +1,20 @@
 # Huffman Visualizer
-**Efficient Data Compression and Algorithm Visualization**
+**Lossless Data Compression & Algorithmic Visualization**
 
-A Python-based implementation of the Huffman Coding algorithm designed to bridge the gap between abstract greedy strategies and practical lossless data compression.
-
----
-
-## Project Overview
-This tool automates the process of generating optimal prefix codes based on character frequency. By utilizing a min-priority queue (Min-Heap) and binary tree structures, the project provides a tangible way to analyze how variable-length coding reduces data redundancy.
+An end-to-end Python implementation of the Huffman Coding algorithm. This project demonstrates the application of greedy strategies to minimize data redundancy through optimal prefix encoding.
 
 ---
 
-## Key Features
-* **Automated Prefix Encoding:** Generates optimal binary codes ensuring no code is a prefix of another.
-* **Algorithmic Visualization:** Transforms the generated Huffman Tree into a graphical layout using NetworkX and Matplotlib.
-* **Analytical Metrics:** Provides real-time calculation of compression ratios to evaluate efficiency against standard 8-bit encoding.
-
----
+## Technical Highlights
+* **Core Algorithm:** Implements a Greedy strategy using a Min-Heap (`heapq`) for efficient tree construction.
+* **Dynamic Rendering:** Maps abstract data structures into hierarchical tree layouts using NetworkX and Matplotlib.
+* **Analytical Tools:** Real-time calculation of compression ratios and automated codebook generation.
 
 ## Technical Stack
 * **Language:** Python 3.x
-* **Core Libraries:** * `Heapq`: Facilitates the greedy merging process via a Min-Priority Queue.
-  * `NetworkX & Matplotlib`: Handles the mapping and rendering of complex tree structures.
-  * `Pydot`: Manages Graphviz layouts for hierarchical node positioning.
+* **Libraries:** NetworkX, Matplotlib, Pydot, Heapq
 
----
-
-## Usage Instructions
+## Quick Start
 1. **Install Dependencies:**
    ```bash
    pip install networkx matplotlib pydot
